@@ -6,6 +6,8 @@ For spritesheets, the sprites will be stored sequentially in memory, from left t
 
 ## Usage
 
+Run `python bmp2coe.py --help` for info on how to run the script.
+
 ## Resources
 
 - https://docs.python.org/3/library/struct.html
