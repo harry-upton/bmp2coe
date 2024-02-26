@@ -82,6 +82,9 @@ def main (args):
     sprites_x = math.floor(image_width / sprite_size)
     sprites_y = math.floor(image_height / sprite_size)
 
+    print("Spritesheet width: %d sprites" % sprites_x)
+    print("Spritesheet height: %d sprites" % sprites_y)
+
     # Load the entire image section of the bitmap into an array of bytes
     image_bytes = []
     if bits_per_pixel == 8:
