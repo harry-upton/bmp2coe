@@ -63,6 +63,7 @@ def main (args):
         green = struct.unpack('B', bmp.read(1))[0]
         red = struct.unpack('B', bmp.read(1))[0]
         unused = struct.unpack('B', bmp.read(1))[0]
+        print("%s \n %s \n %s \n %s" % (hex(blue), hex(green), hex(red), hex(unused)))
 
         # make 4 bit
         blue = int(blue / 16)
@@ -94,6 +95,7 @@ def main (args):
     else:
         for i in range(int((sprites_x*sprite_size)*(sprites_y*sprite_size)/2)):
             two_pixels = struct.unpack('B', bmp.read(1))[0]
+            print("%s" % hex(two_pixels))
             high, low = two_pixels >> 4, two_pixels & 0x0F
             image_bytes.append(high)
             image_bytes.append(low)
